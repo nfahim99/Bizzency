@@ -1,0 +1,409 @@
+*{
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+:root{
+    --brand_clr: #0f2f44;
+    --button_clr:#ffc712;
+    --redish_white: #e7e7e7;
+    --dark_blue: #2a4456;
+    --dark_clr: #353535;
+    --text_dark_clr: #555555;
+    --white_clr:#f1f1f1;
+    --skill_track: #dddddd;
+
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row, .flex_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+}
+h2 span{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    display: block;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+/* top header section css starts now*/
+#top_header{
+    background: var(--brand_clr);
+    padding: 10px 0;
+    color: var(--redish_white);
+}
+#top_header .welcome{
+    text-align: left;
+    width: 50%;
+    
+}
+#top_header .opening_time{
+    width: 50%;
+    text-align: right;
+}
+
+
+/* top header section css ends now*/
+
+/* main header section css starts now*/
+
+#main_header .logo{
+    width: 40%;
+    padding: 10px 0;
+}
+#main_header .manu{
+    width: 60%;
+}
+/* #main_header .manu_icon{
+    width: 15%;
+    text-align: right;
+   
+} */
+#main_header .manu ul li{
+    display: inline-block;
+    text-align: right;
+    padding: 10px 0 10px 35px;
+
+}
+#main_header .manu ul li a{
+    color: var(--dark_clr);
+    text-align: right;
+    transition: all linear 0.3s;
+}
+#main_header .manu ul li:first-child{
+    background: rgba(255, 199, 18, 0.3);
+    padding:20px 10px;
+
+}
+#main_header .manu ul li:first-child a{
+    color: var(--button_clr);
+}
+#main_header .manu ul li:hover a{
+    color: var(--button_clr);
+}
+
+#main_header .manu_icon ul li{
+    display:inline-block ;
+    margin-left: 15px;
+}
+/* main header section css ends now*/
+
+/* banner section css starts now*/
+#banner{
+    background: #e0eeff;
+    padding-top: 65px;
+}
+#banner .banner_item{
+    width: 45%;
+    padding-top: 25px;
+}
+#banner .banner_item h1{
+    font-size: 80px;
+    font-family: 'Abril Fatface', cursive;
+}
+#banner .banner_item h1 span{
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    display: block;
+}
+#banner .banner_item h4{
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    
+}
+#banner .banner_item p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+#banner .banner_item .explore {
+    background-color: #8484bf;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 30px;
+}
+#banner .banner_item .explore p{
+    color: var(--redish_white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+#banner .banner_item .play{
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    padding: 10px 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#banner .banner_item .play i{
+    color: #8484bf;
+}
+#banner .banner_img{
+    width: 55%;
+    align-items: center;
+    display: block;
+}
+#banner .banner_img img{
+    width: 100%;
+    display: block;
+    
+}
+
+/* banner section css ends now*/
+
+/* about section css starts now*/
+#about{
+    padding-top: 60px;
+    color: var(--brand_clr);
+}
+#about .about_item{
+    width: 50%;
+}
+
+#about .about_item h6{
+    font-size: 16px;
+    padding: 10px 30px;
+    line-height: 40px;
+    font-weight: 400;
+}
+#about .about_item .know{
+    background-color: var(--white_clr);
+    display: inline-block;
+    border: 1px solid var(--brand_clr);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all linear 0.5s;
+}
+#about .about_item .know:hover{
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    background: var(--button_clr);
+    border: 1px solid var(--button_clr);
+}
+#about .about_item .read{
+    background-color: var(--white_clr);
+    padding: 10px 10px;
+    border: 1px solid var(--brand_clr);
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all linear 0.5s;
+
+}
+#about .about_item .read:hover{
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    background: var(--button_clr);
+    border: 1px solid var(--button_clr);
+}
+#about .about_item a{
+    color: var(--brand_clr);
+    font-weight: 400;
+}
+#about .about_img{
+    width: 50%;
+}
+#about .about_img img{
+    width: 100%;
+}
+/* about section css ends now*/
+
+/* skill section css starts now*/
+#skill{
+    padding-top: 60px;
+    color: var(--brand_clr);
+    text-align: right;
+}
+#skill .skill_img{
+    width: 50%;
+}
+#skill .skill_img img{
+    width: 100%;
+}
+#skill .skill_content{
+    width: 50%;
+}
+#skill .skill_content .skill_item{
+    align-items: center;
+    padding-top: 15px;
+}
+#skill .skill_content .skill_item_content .skill_title{
+    justify-content: space-between;
+}
+
+#skill .skill_content .skill_item_content{
+    width: calc(100% - 70px);
+    padding-right: 20px;
+}
+#skill .skill_content .skill_item_content .skill_track{
+    height: 10px;
+    background: var(--skill_track);
+    border-radius: 10px;
+}
+#skill .skill_content .skill_item_content .skill_track .skill_bar{
+    height: 10px;
+    margin-left: auto;
+    border-radius: 0 10px 10px 0;
+}
+#skill .skill_content .skill_icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+/* skill section css ends now*/
+
+/* blog section css starts now*/
+#blog{
+    padding-top: 50px;
+}
+#blog .blog_item{
+    background: #f5f5f5;
+    width: calc(100% / 3 - 30px);
+    margin: 0 15px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+#blog .blog_item img{
+    width: 100%;
+}
+#blog .blog_item p{
+    font-size: 14px;
+    color: #8f8f8f;
+    
+}
+#blog .blog_item h4{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+#blog .blog_item a{
+    font-size: 16px;
+    color: #8f8f8f;
+    font-weight: 600;
+}
+#blog .blog_item:hover{
+    background: var(--brand_clr);
+    transition: all linear 0.5s;
+    color: var(--white_clr)!important;
+    
+}
+#blog button{
+    background: var(--button_clr);
+    margin-left: 550px;
+    margin-top: 30px;
+    border: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all linear 0.5s;
+}
+#blog button:hover{
+    background: var(--brand_clr);
+    color: var(--white_clr);
+}
+/* blog section css ends now*/
+
+/* footer section css starts now*/
+#footer{
+    padding-top: 50px;
+}
+#footer .company_details{
+    width: 30%;
+    padding-right: 25px;
+}
+#footer .company_details img{
+    padding-bottom: 15px;
+}
+
+#footer p{
+    font-size: 14px;
+    padding: 15px 0;
+    color: #8f8f8f;
+}
+#footer .company_details ul li {
+    display: inline-block;
+    text-align: left;
+    padding-right: 10px;
+    
+}
+#footer .company_details ul li a i{
+    color: var(--brand_clr);
+    border: 1px solid var(--brand_clr);
+    border-radius: 50%;
+    padding: 10px 10px;
+    margin-right: 10px;
+    transition: all linear 0.5s;
+}
+#footer .company_details ul li a:hover i{
+    background: var(--brand_clr);
+    color: var(--white_clr);
+}
+
+#footer .contact_us{
+    width: 25%;
+}
+#footer .contact_us i{
+    font-size: 20px;
+    padding-right: 10px;
+}
+#footer h4{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+#footer .contact_us p{
+    font-size: 14px;
+}
+
+#footer .contact_us .contact_item{
+    align-items: center;
+}
+#footer .link{
+    width: 15%;
+}
+#footer .link a{
+    display: block;
+    padding: 15px 0;
+    color: #8f8f8f;
+    transition: all linear 0.5s;
+}
+#footer .link a:hover{
+    color: var(--button_clr);
+}
+#footer .link h5{
+    font-size: 14px;
+    color: var(--brand_clr);
+}
+#footer .filckr{
+    width: 30%;
+}
+#footer .filckr img{
+    display: inline-block;
+    width: 50%;
+}
+/* footer section css ends now*/
